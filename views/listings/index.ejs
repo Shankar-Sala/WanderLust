@@ -188,9 +188,7 @@
                      <b>
                         <%= listing.title %>
                      </b><br>
-                     <!-- &#8377; <#%= listing.price %> / Night<br> -->
-                     <!-- &#8377; <%= listing.price.toLocaleString("en-IN") %> / Night<br>
-                        <i class="text-info"> &nbsp; &nbsp; +18% GST</i> -->
+                    
                         <%
                         let day =Math.floor(Math.random() * 4 + 2);
                         let no = Math.floor(Math.random() * 28 + 1);
@@ -208,38 +206,6 @@
             <% } %>
    </div>
    </a>
-
-
-
-
-
-   <!-- <ul>
-    <% for(let listing of allListings) { %>
-        <li><a href="/listings/<%= listing._id %>"> <%= listing.title %></a></li>
-     <% } %>
-   </ul> -->
-
-   <!-- </body> -->
-
-
-   <!-- <script>
-      let textSwitch = document.getElementById("flexSwitchCheckDefault");
-      textSwitch.addEventListener("click", () => {
-         // console.log("Clicked")
-
-         let textInfo = document.getElementsByClassName("text-info")
-         // console.log(textInfo)
-         for (info of textInfo) {
-
-            if (info.style.display != "inline") {
-               info.style.display = "inline";
-
-            } else {
-               info.style.display = "none";
-            }
-         }
-      })
-   </script> -->
 
    <script src="/js/filter.js"></script>
    <script src="/js/tax.js"></script>
